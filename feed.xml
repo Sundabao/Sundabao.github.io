@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://sunyongzheng.com/feed.xml" />
 <link rel="alternate" type="text/html" href="http://sunyongzheng.com" />
-<updated>2015-04-21T10:09:31+08:00</updated>
+<updated>2015-06-11T16:27:52+08:00</updated>
 <id>http://sunyongzheng.com/</id>
 <author>
   <name>Your Name</name>
@@ -192,14 +192,14 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
       @site = site
       @base = base
       @dir = dir
-      @name = 'index.html'
+      @name = &#39;index.html&#39;
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'tag_index.html')
-      self.data['tag'] = tag
-      tag_title_prefix = site.config['tag_title_prefix'] || 'Tagged: '
-      tag_title_suffix = site.config['tag_title_suffix'] || '&amp;amp;#8211;'
-      self.data['title'] = &quot;#{tag_title_prefix}#{tag}&quot;
-      self.data['description'] = &quot;An archive of posts tagged #{tag}.&quot;
+      self.read_yaml(File.join(base, &#39;_layouts&#39;), &#39;tag_index.html&#39;)
+      self.data[&#39;tag&#39;] = tag
+      tag_title_prefix = site.config[&#39;tag_title_prefix&#39;] || &#39;Tagged: &#39;
+      tag_title_suffix = site.config[&#39;tag_title_suffix&#39;] || &#39;&amp;amp;#8211;&#39;
+      self.data[&#39;title&#39;] = &quot;#{tag_title_prefix}#{tag}&quot;
+      self.data[&#39;description&#39;] = &quot;An archive of posts tagged #{tag}.&quot;
     end
   end
 end
@@ -587,7 +587,7 @@ end
 &lt;p&gt;Non Pygments/Rouge code example&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;div id=&quot;awesome&quot;&amp;gt;
-    &amp;lt;p&amp;gt;This is great isn't it?&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;This is great isn&#39;t it?&amp;lt;/p&amp;gt;
 &amp;lt;/div&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
